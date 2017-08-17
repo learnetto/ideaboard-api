@@ -1,0 +1,2 @@
+class Idea < ApplicationRecord
+end
