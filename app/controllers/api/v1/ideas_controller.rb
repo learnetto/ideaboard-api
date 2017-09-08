@@ -1,9 +1,9 @@
 module Api::V1
-	class IdeasController < ApplicationController
-	  def index
+  class IdeasController < ApplicationController
+    def index
       @ideas = Idea.order("created_at DESC")
-	  	render json: @ideas
-	  end
+      render json: @ideas
+    end
 
     def create
       @idea = Idea.create(idea_params)
